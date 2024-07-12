@@ -11,7 +11,10 @@ app.set('views', './views');
 
 // Define a route for the root URL
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.render("login",); //will fill this with more info
+});
+app.get("/signup", (req, res) => {
+    res.render("signup",) //will fill this with more info
 });
 
 // Start the server
