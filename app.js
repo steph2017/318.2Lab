@@ -1,10 +1,13 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3030;
 
 const fs = require('fs'); //import filesystem to read template views (not sure if I will need with Pug)
 const path = require('path'); // Using Path
 
+//set up Pug
+app.set('view engine', 'pug');
+app.set('views', './views');
 
 // Define a route for the root URL
 app.get('/', (req, res) => {
