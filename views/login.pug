@@ -3,16 +3,17 @@ html
   head
     title= "Sample Login Page"
   body
-  h3= "Login"
-    form(action="/", method="POST")
-      div
-        label(for="email") Email:
-        input(type="email", id="email", name="email", placeholder="example@example.com", required)
-      div
-        label(for="password") Password:
-        input(type="password", id="name" name="password", placeholder="******", required)
-      div
-        button(type="submit") Submit
-      div
-        p= "New to this Page? " 
-          a(href="/signup") Sign up here.
+  h3= "Welcome Back!"
+  br
+  form(action="/", method="POST")
+    div
+      label(for="email") Email:
+      input(type="email", id="email", name="email", placeholder="example@example.com", required)
+    div
+      label(for="password") Password:
+      input(type="password", id="name" name="password", placeholder="******", required)
+    div
+      button(type="submit") Submit
+    div
+      p= "New to this Page? " 
+        a(href="/signup") Sign up here.

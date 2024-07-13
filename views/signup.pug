@@ -1,23 +1,25 @@
 doctype html
 html
   head
-    title= Sample Signup Page
+    title= "Sample Signup Page"
   body
-    form(action="/", method="POST")
-      div
-        label(for="firstname") First Name:
-        input(type="text", id="firstname", name="firstname", placeholder="John", required) 
-      div
-        label(for="lastname") Last Name:
-        input(type="text", id="lastname", name="lastname", placeholder="Doe", required)
-      div
-        label(for="email") Email:
-        input(type="email", id="email", name="email", placeholder="example@example.com", required)
-      div
-        label(for="password") Password:
-        input(type="password", id="name" name="password", placeholder="******", required)
-      div
-        button(type="submit") Submit
-      div
-        p New to this Page? 
-          a(href="/signup") Sign up here.
+  h3= "New User Registration"
+  br
+  form(action="/signup", method="POST")
+    div
+      label(for="firstname") First Name:
+      input(type="text", id="firstname", name="firstname", placeholder="John", required) 
+    div
+      label(for="lastname") Last Name:
+      input(type="text", id="lastname", name="lastname", placeholder="Doe", required)
+    div
+      label(for="email") Email:
+      input(type="email", id="email", name="email", placeholder="example@example.com", required)
+    div
+      label(for="password") Password:
+      input(type="password", id="name" name="password", placeholder="******", required)
+    div
+      button(type="submit") Submit
+    div
+      p= "Already have an account with us? " 
+        a(href="/") Log in here.
